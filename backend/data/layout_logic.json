@@ -1,0 +1,48 @@
+{
+  "adjacency_rules": {
+    "living_room": ["dining", "entrance"],
+    "kitchen": ["dining"],
+    "dining": ["living_room", "kitchen"],
+    "master_bedroom": ["bathroom_attached"],
+    "bedroom": [],
+    "bathroom_common": [],
+    "pooja_room": [],
+    "staircase": [],
+    "parking": ["entrance"]
+  },
+
+  "separation_rules": {
+    "kitchen": ["bathroom_common", "bathroom_attached"],
+    "pooja_room": ["bathroom_common", "bathroom_attached"],
+    "bedroom": ["kitchen"]
+  },
+
+  "zone_definitions": {
+    "public": ["living_room", "dining", "parking"],
+    "private": ["master_bedroom", "bedroom", "bathroom_attached"],
+    "service": ["kitchen", "bathroom_common", "staircase"],
+    "sacred": ["pooja_room"]
+  },
+
+  "zone_placement": {
+    "public": "front",
+    "private": "rear",
+    "service": "side",
+    "sacred": "northeast"
+  },
+
+  "flow_rules": [
+    "Entrance leads to living room",
+    "Living room connects to dining",
+    "Dining connects to kitchen",
+    "Bedrooms are accessed from living/dining area via corridor",
+    "Bathrooms are not directly visible from living room",
+    "Kitchen has external wall for ventilation and exhaust"
+  ],
+
+  "corridor": {
+    "min_width": 3.5,
+    "max_width": 4.5,
+    "description": "Internal passage connecting rooms"
+  }
+}

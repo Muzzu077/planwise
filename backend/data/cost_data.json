@@ -1,0 +1,46 @@
+{
+  "construction_cost_per_sqft": {
+    "economy": {
+      "rate": 1200,
+      "description": "Basic construction with standard materials"
+    },
+    "standard": {
+      "rate": 1600,
+      "description": "Good quality construction with branded materials"
+    },
+    "premium": {
+      "rate": 2200,
+      "description": "High-end construction with premium materials"
+    }
+  },
+
+  "cost_breakdown_ratio": {
+    "materials": 0.55,
+    "labor": 0.30,
+    "plumbing_electrical": 0.08,
+    "finishing": 0.05,
+    "miscellaneous": 0.02
+  },
+
+  "phase_wise_ratio": {
+    "foundation": 0.12,
+    "structure": 0.35,
+    "brickwork_plastering": 0.18,
+    "plumbing_electrical": 0.10,
+    "flooring": 0.08,
+    "doors_windows": 0.07,
+    "painting_finishing": 0.07,
+    "miscellaneous": 0.03
+  },
+
+  "additional_costs": {
+    "parking_per_sqft": 800,
+    "boundary_wall_per_rft": 500,
+    "septic_tank": 25000,
+    "water_tank": 15000,
+    "staircase_per_floor": 40000
+  },
+
+  "currency": "INR",
+  "note": "Rates are approximate for tier-2 Indian cities (2025-2026). Actual costs vary by location."
+}

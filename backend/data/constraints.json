@@ -1,0 +1,73 @@
+{
+  "setback_rules": {
+    "description": "Minimum distance from plot boundary to building (varies by city)",
+    "default": {
+      "front": 5,
+      "rear": 3,
+      "left": 3,
+      "right": 3
+    },
+    "note": "Values in feet. These are typical for residential plots in Indian municipalities."
+  },
+
+  "building_rules": {
+    "max_ground_coverage": 0.65,
+    "max_fsi": 1.5,
+    "min_floor_height": 10,
+    "max_floors_residential": 3,
+    "min_plinth_height": 1.5,
+    "wall_thickness": 0.75,
+    "description": "FSI = Floor Space Index. Ground coverage = buildable footprint / plot area."
+  },
+
+  "ventilation_rules": {
+    "min_window_area_ratio": 0.1,
+    "every_habitable_room_needs_exterior_wall": true,
+    "kitchen_must_have_exhaust_wall": true,
+    "bathroom_must_have_ventilation": true,
+    "description": "Rooms must have adequate natural light and ventilation"
+  },
+
+  "structural_rules": {
+    "min_corridor_width": 3.5,
+    "min_door_width": 2.5,
+    "min_staircase_width": 3,
+    "stair_riser_max": 0.625,
+    "stair_tread_min": 0.833,
+    "bathroom_plumbing_stack": "Bathrooms should align vertically across floors",
+    "load_bearing_walls": "External walls and key internal walls carry structural load"
+  },
+
+  "vastu_rules": {
+    "enabled": true,
+    "entrance": {
+      "preferred": ["north", "east", "northeast"],
+      "avoid": ["south", "southwest"]
+    },
+    "kitchen": {
+      "preferred": ["southeast"],
+      "avoid": ["northeast"]
+    },
+    "master_bedroom": {
+      "preferred": ["southwest"],
+      "avoid": ["northeast"]
+    },
+    "pooja_room": {
+      "preferred": ["northeast"],
+      "avoid": ["south", "southwest"]
+    },
+    "bathroom": {
+      "preferred": ["northwest", "west"],
+      "avoid": ["northeast", "east"]
+    },
+    "living_room": {
+      "preferred": ["north", "east", "northeast"],
+      "avoid": ["southwest"]
+    },
+    "staircase": {
+      "preferred": ["southwest", "south"],
+      "avoid": ["northeast", "center"]
+    },
+    "description": "Traditional Indian architectural guidelines for room placement"
+  }
+}

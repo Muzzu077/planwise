@@ -1,0 +1,27 @@
+{
+  "1BHK": {
+    "rooms": ["living_room", "bedroom", "kitchen", "bathroom_common"],
+    "min_area": 400,
+    "typical_area": "400-600 sqft"
+  },
+  "2BHK": {
+    "rooms": ["living_room", "master_bedroom", "bedroom", "kitchen", "dining", "bathroom_attached", "bathroom_common"],
+    "min_area": 800,
+    "typical_area": "800-1200 sqft"
+  },
+  "3BHK": {
+    "rooms": ["living_room", "master_bedroom", "bedroom", "bedroom", "kitchen", "dining", "bathroom_attached", "bathroom_common", "bathroom_common"],
+    "min_area": 1200,
+    "typical_area": "1200-1800 sqft"
+  },
+  "2BHK_with_pooja": {
+    "rooms": ["living_room", "master_bedroom", "bedroom", "kitchen", "dining", "bathroom_attached", "bathroom_common", "pooja_room"],
+    "min_area": 900,
+    "typical_area": "900-1300 sqft"
+  },
+  "3BHK_with_pooja": {
+    "rooms": ["living_room", "master_bedroom", "bedroom", "bedroom", "kitchen", "dining", "bathroom_attached", "bathroom_common", "bathroom_common", "pooja_room"],
+    "min_area": 1400,
+    "typical_area": "1400-2000 sqft"
+  }
+}

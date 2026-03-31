@@ -1,0 +1,106 @@
+{
+  "rooms": {
+    "living_room": {
+      "min_length": 12,
+      "min_width": 12,
+      "max_length": 20,
+      "max_width": 18,
+      "priority": 1,
+      "placement": "near_entrance",
+      "requires_exterior_wall": true,
+      "description": "Main living area, placed near entrance for accessibility"
+    },
+    "master_bedroom": {
+      "min_length": 12,
+      "min_width": 10,
+      "max_length": 16,
+      "max_width": 14,
+      "priority": 2,
+      "placement": "corner_private",
+      "requires_exterior_wall": true,
+      "description": "Primary bedroom, placed in private corner with ventilation"
+    },
+    "bedroom": {
+      "min_length": 10,
+      "min_width": 10,
+      "max_length": 14,
+      "max_width": 12,
+      "priority": 3,
+      "placement": "corner_private",
+      "requires_exterior_wall": true,
+      "description": "Secondary bedroom, placed for privacy"
+    },
+    "kitchen": {
+      "min_length": 8,
+      "min_width": 7,
+      "max_length": 12,
+      "max_width": 10,
+      "priority": 4,
+      "placement": "near_dining",
+      "requires_exterior_wall": true,
+      "description": "Kitchen placed near dining area with ventilation"
+    },
+    "dining": {
+      "min_length": 8,
+      "min_width": 8,
+      "max_length": 12,
+      "max_width": 12,
+      "priority": 5,
+      "placement": "between_kitchen_living",
+      "requires_exterior_wall": false,
+      "description": "Dining connects kitchen to living area"
+    },
+    "bathroom_attached": {
+      "min_length": 5,
+      "min_width": 4,
+      "max_length": 8,
+      "max_width": 6,
+      "priority": 6,
+      "placement": "adjacent_to_bedroom",
+      "requires_exterior_wall": true,
+      "description": "Attached bathroom for master bedroom"
+    },
+    "bathroom_common": {
+      "min_length": 5,
+      "min_width": 4,
+      "max_length": 7,
+      "max_width": 6,
+      "priority": 7,
+      "placement": "central_accessible",
+      "requires_exterior_wall": true,
+      "description": "Common bathroom accessible from living area"
+    },
+    "pooja_room": {
+      "min_length": 4,
+      "min_width": 4,
+      "max_length": 6,
+      "max_width": 6,
+      "priority": 8,
+      "placement": "northeast",
+      "requires_exterior_wall": false,
+      "description": "Prayer room, ideally in northeast per Vastu"
+    },
+    "staircase": {
+      "min_length": 8,
+      "min_width": 4,
+      "max_length": 12,
+      "max_width": 5,
+      "priority": 9,
+      "placement": "central_or_side",
+      "requires_exterior_wall": false,
+      "description": "Staircase for multi-floor access"
+    },
+    "parking": {
+      "min_length": 10,
+      "min_width": 10,
+      "max_length": 18,
+      "max_width": 12,
+      "priority": 10,
+      "placement": "front_near_road",
+      "requires_exterior_wall": true,
+      "description": "Vehicle parking near road access"
+    }
+  },
+  "unit": "feet",
+  "note": "All dimensions in feet. Priority 1 = placed first."
+}
