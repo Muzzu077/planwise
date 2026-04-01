@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\(''''packages'''',{}\\).get\\(''''node_modules/concurrently'''',{}\\).get\\(''''version'''',''''not found''''\\)\\)\")"
+    ]
+  }
+}

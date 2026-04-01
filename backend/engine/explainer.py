@@ -48,11 +48,26 @@ def generate_explanations(
         explanations.append(f"Additional costs included: {extras}.")
 
     # Floor info
-    if request.get("floors", 1) > 1:
+    floors = request.get("floors", 1)
+    if floors > 1:
         explanations.append(
-            f"Plan is for {request['floors']} floors. "
+            f"Plan is for {floors} floors. "
             f"Total built-up area across all floors: "
-            f"{cost_result['total_built_area']:.0f} sqft."
+            f"{cost_result['total_built_area']:.0f} sqft. "
+            f"Ground floor: living areas & kitchen. "
+            f"Upper floor(s): bedrooms & private spaces."
+        )
+
+    # Multi-floor construction notes
+    if floors == 2:
+        explanations.append(
+            "For G+1: Staircase placement should be near the entrance or center. "
+            "Upper floor bedrooms benefit from the privacy of being above the living areas."
+        )
+    elif floors == 3:
+        explanations.append(
+            "For G+2: Ensure structural walls align across all floors. "
+            "Consider placing utility areas (water tank, overhead storage) on the terrace level."
         )
 
     # Vastu note
