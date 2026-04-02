@@ -1,4 +1,0 @@
-# Netlify Redirects
-# This ensures that all client-side routes in Next.js are handled correctly
-/*    /index.html   200
-/api/*  https://YOUR-BACKEND-URL-HERE.render.com/:splat  200!
