@@ -724,10 +724,8 @@ export default function Home() {
         delete payload.budget;
       }
 
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL
-        ? `${process.env.NEXT_PUBLIC_API_URL}/generate-plan`
-        : "/api/generate-plan";
-      const res = await fetch(apiUrl, {
+      const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const res = await fetch(`${API_BASE}/generate-plan`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
