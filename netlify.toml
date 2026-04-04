@@ -1,10 +1,24 @@
 [build]
   base = "frontend"
-  command = "npm run build"
+  command = "next build"
   publish = "out"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
+
+# Proxy API calls to the deployed backend
+# Set BACKEND_URL in Netlify environment variables
+[[redirects]]
+  from = "/api/*"
+  to = "https://planwise-api.railway.app/:splat"
+  status = 200
+  force = false
+
+# Single-page app routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"

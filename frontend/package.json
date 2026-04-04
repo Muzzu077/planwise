@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && echo /api/* ${NEXT_PUBLIC_API_URL:-http://localhost:8000}/:splat 200! > out/_redirects",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },

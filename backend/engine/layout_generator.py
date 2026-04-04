@@ -259,7 +259,7 @@ class LayoutGenerator:
             scale = min((usable_area / total_min_area) ** 0.35, 1.15) * scale_bias
 
         # Create rooms
-        bedroom_count = 0
+        bedroom_count = 1
         bathroom_common_count = 0
         for room_type, spec in room_specs:
             w = min(spec["min_width"] * scale, spec["max_width"])
